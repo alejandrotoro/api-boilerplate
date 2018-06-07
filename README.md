@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Add URL
+To add pages you only need to change the `page-url` attribute in the curl
+```
+curl -i -H "Accept: application/vnd.api+json" -H 'Content-Type:application/vnd.api+json' -X POST -d '{"data": {"type":"pages", "attributes":{"page-url":"https://es.lipsum.com/"}}}' https://api-boilerplate-87.herokuapp.com/pages
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Show Pages and Contents
+Index: [All Pages](https://api-boilerplate-87.herokuapp.com/pages).
+Show: [One Page](https://api-boilerplate-87.herokuapp.com/pages/1).
