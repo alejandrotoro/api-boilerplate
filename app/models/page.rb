@@ -25,9 +25,8 @@ class Page < ActiveRecord::Base
       response = ::HTTParty.get(page_url)
       (response.code == 200 || response.code == 302)
     rescue
+      errors.add(:url, 'The url is not reachable at this moment.') unless success
       false
     end
-    errors.add(:url, 'The url is not reachable at this moment.') unless success
   end
-
 end

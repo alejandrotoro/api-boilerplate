@@ -50,3 +50,11 @@ gem 'rack-cors'
 gem 'jsonapi-resources', '>= 0.7.0'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'httparty'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'json_matchers'
+end
