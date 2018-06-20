@@ -9,3 +9,6 @@ curl -i -H "Accept: application/vnd.api+json" -H 'Content-Type:application/vnd.a
 ## Show Pages and Contents
 Index: [All Pages](https://api-boilerplate-87.herokuapp.com/pages).
 Show: [One Page](https://api-boilerplate-87.herokuapp.com/pages/1).
+
+## Tests
+Run `rspec` in a terminal
